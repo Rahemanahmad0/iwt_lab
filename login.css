@@ -1,0 +1,289 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-height: 150px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+#navbar {
+  position: relative;
+  top: 0px;
+  height: 60px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+#navbar ul li a {
+  /* color: white;   */
+  list-style: none; /* ye karne par wo dot dot nahi aayenge */
+  padding: 10px 22px;
+  text-decoration: none; /* navbar ka underline hat jaaega is sey */
+  display: block;
+  border-radius: 10px;
+  color: white;
+}
+#navbar li a:hover {
+  color: black;
+  background-color: cornsilk;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  background-color: rgb(25, 160, 45);
+  content: "";
+  z-index: -1;
+  opacity: 0.8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 200px;
+  flex-direction: column;
+  height: 300px;
+}
+
+#home h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 17px 50px;
+  color: white;
+}
+#home p {
+  font-size: 1.2rem;
+  color: white;
+}
+.h-primary {
+  font-size: 1.5rem;
+  color: white;
+}
+.btn {
+  padding: 6px 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.btn:hover {
+  background-color: none;
+  color: rgb(24, 24, 23);
+}
+
+#centre {
+  /* border: 2px solid rgb(10, 10, 10); */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  top: 5vh;
+  height: 70vh;
+  width: 25vw;
+  left: 40px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  align-items: center;
+}
+
+.item1 {
+  position: relative;
+  left: 50vw;
+  font-size: 1.3rem;
+  /* color:black ; */
+}
+
+#webname {
+  border: 2px solid black;
+  height: 80px;
+  background-color: black;
+  color: rgb(181, 178, 178);
+  position: relative;
+  text-align: center;
+}
+
+#webname h1 {
+  position: relative;
+  top: 30px;
+}
+
+#centre li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #bebdbd;
+}
+
+a:link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  
+}
+.side {
+  position: relative;
+  height: 10vh;
+  width: 10vw;
+  /* border: 2px solid red; */
+  margin: 550px;
+  top: 100px;
+  padding: 200px;
+  font-weight: bold;
+ 
+}
+
+#centre .side a{
+  color: black;
+}
+
+.login{
+  
+  height: 34vh;
+  width: 40vw;
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  color:antiquewhite;
+  background: #4772df;
+  box-shadow: 0 4px 8pxrgba(35, 35, 35, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+
+}
+
+.form-group{
+
+  
+  height: 5vh;
+  width: 20vw;
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+.login-button{
+  position: relative;
+  top: 30px;
+  left: 200px;
+
+}
+
+#password{
+height: 3vh;
+width: 13vw;
+}
+
+
+#username{
+  height: 3vh;
+  width: 13vw;
+  }
+
+.login h2{
+  position: relative;
+  font-size: 2rem;
+  /* left: 100px; */
+  text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+label{
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+  .login-button {
+    width: 30%;
+    padding: 10px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+
+  .login-button:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+  }
+
+
+  .side4{
+    height: 39vh;
+    width: 44vw;
+    /* border: 2px solid rgb(26, 25, 25); */
+    border-radius: 3px;
+    position: absolute;
+    top: 33vh;
+    background: #e8e4e4;
+    left: 43vw;
+    text-align: center;
+    box-shadow: #bebdbd;
+
+  }
+
+  .side4 p{
+    font-size: 1.2rem;
+    position: relative;
+    top: 10vh;
+  }
+
+
+  .main{
+    position: absolute;
+    /* border: 2px solid black; */
+    top: 28vh;
+    right: 26vw;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 2px ;
+    /* box-shadow: #f68d32; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    border-radius: 3px;
+
+  }
+
+  .book{
+    /* border: 2px solid red; */
+    margin: 13px;
+    position: relative;
+    top: 5vh;
+    height: auto;
+
+  }
+  .main h2{
+    position: relative;
+    /* text-align: center; */
+    left:7vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-size: 1.7em;
+    text-decoration: underline;
+  }
+
+  .cart-button{
+    border-radius: 2px;
+    border: none;
+    height: 2vh;
+    width: 3vw;
+    border: 1px solid black;
+  }
+
