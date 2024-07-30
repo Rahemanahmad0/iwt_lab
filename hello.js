@@ -1,3 +1,1 @@
-console.log('====================================');
-console.log("lawda");
-console.log('====================================');
+console.log("final setup");
